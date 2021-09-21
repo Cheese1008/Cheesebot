@@ -316,7 +316,8 @@ async def h(ctx):
 \n!mix ｜ 대기열을 섞습니다.
 \n!qp [번호] ｜ 해당 번호의 노래를 다음 순서에 재생합니다. (오류)
 \n!nod [번호] ｜ 대기열의 번호에 해당하는 음악을 제거합니다.
-\n!qc ｜ 대기열의 모든 음악을 제거합니다.""", color = 0xfaf0cf))
+\n!qc ｜ 대기열의 모든 음악을 제거합니다.
+\n!청소 [번호] ｜ 채팅을 번호만큼 삭제합니다.   """, color = 0xfaf0cf))
 
 @bot.command(name="청소", pass_context=True)
 async def clear(ctx, *, amount=5):
