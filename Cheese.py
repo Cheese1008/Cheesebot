@@ -9,6 +9,7 @@ from discord import FFmpegPCMAudio
 import asyncio
 import time
 import random
+import os
 
 bot = commands.Bot(command_prefix='!')
 
@@ -329,6 +330,6 @@ async def on_message(msg):
     if topic is not None and 'Cheese' in topic:
         await bot.process_commands(msg)            
     
-
-bot.run('ODY0NDU1OTA3NTE2NDgxNTU2.YO1tTQ.9dbzaDjQSEDZ7abbNntY72gzU4A')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
 
